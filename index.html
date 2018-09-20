@@ -7,14 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.10/css/mdb.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/papercss@1.5.3/dist/paper.min.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" /> -->
-  <link rel="stylesheet" href="style.css" />
+  <link id="link1src" disabled="true" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link id="link2src" disabled="true" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.10/css/mdb.min.css" rel="stylesheet">
+  <link id="link3src" disabled="true" rel="stylesheet" href="https://unpkg.com/papercss@1.5.3/dist/paper.min.css">
+  <link id="link4src" disabled="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" />
+  <link id="link5src" disabled="true" rel="stylesheet" href="style.css" />
+  <style>
+  .inactive { background:#ccc;}
+  button { background:#bada55; cursor:pointer; }
+</style>
 </head>
 
 <body>
+  <div class="row">
+    <div class="col">
+    <button id="link1" class="inactive">Bootstrap</button>
+    <button id="link2" class="inactive">Material Design</button>
+    <button id="link3" class="inactive">Paper</button>
+    <button id="link4" class="inactive">Semantic</button>
+    <button style="float:right;" id="link5" class="inactive">Custom Styles</button>
+  </div>
+  </div>
   <div class="container">
     <header>
       <h1 id="name">John Smith</h1>
@@ -191,6 +204,26 @@
       <!-- signatory -->
     </div> <!-- end main content -->
   </div> <!-- end container -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script>
+  
+  $( 'button' ).click(function() {
+    var linkId = ($(this).attr("id"))
+    if ($(this).hasClass('inactive')) {
+      $('#'+linkId + 'src').prop('disabled', false);
+    } else {
+      $('#'+linkId + 'src').prop('disabled', true);
+    }
+    ($(this).toggleClass('inactive'));
+
+  });  
+  </script>
+
 </body>
 
 </html>
+
