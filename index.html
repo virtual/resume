@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Frameworks </title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.10/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.5.3/dist/paper.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" /> -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="name">John Smith</h1>
+
+      <div id="designation">
+
+        <p class="title">your designation</p>
+        <p class="organization">The organisation name</p>
+
+      </div>
+
+      <div class="contact">
+        <div class="email"><a href="mailto:john@example.com">john@example.com</a></div>
+      </div>
+
+    </header>
+    <div class="content" role=main>
+      <section id="objective">
+        <h2 class="title">Objective</h2>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+        </div> <!-- end description -->
+      </section>
+
+
+      <section id="Education">
+        <h2 class="title">Education</h2>
+        <div class="description">
+
+          <table class="table">
+            <thead>
+              <td>Duration</td>
+              <td>Qualification</td>
+              <td>Institute/School</td>
+              <td>Result</td>
+            </thead>
+
+            <!-- edit this/ row-wise-->
+            <tr>
+              <td>abc</td>
+              <td>abc</td>
+              <td>abc</td>
+              <td>abc</td>
+            </tr>
+
+            <tr>
+              <!-- row2 -->
+              <td>abc</td>
+              <td>abc</td>
+              <td>abc</td>
+              <td>abc</td>
+            </tr>
+
+          </table>
+
+
+        </div> <!-- end description -->
+      </section>
+
+      <section id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="description">
+
+          <!-- Project 1 -->
+          <section class="project">
+            <h3 class="title">Title of the project</h3>
+            <div class="meta">
+              <p class="field">Project Field</p> <p class="date">Aug 2010 - Nov 2010</p>
+            </div>
+            <p class="description"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+              eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus. </p>
+          </section> <!-- end project description -->
+
+          <!-- project 2 -->
+          <section class="project">
+            <h3 class="title">Title of the project</h3>
+            <div class="meta">
+              <p class="field">Project Field</p> <p class="date">Aug 2010 - Nov 2010</p>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+              dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. </p>
+          </section> <!-- end project description -->
+
+
+          <!-- project 3 -->
+          <section class="project">
+            <h3 class="title">Title of the project</h3>
+            <div class="meta">
+              <p class="field">Project Field</p> <p class="date">Aug 2010 - Nov 2010</p> </div>
+            <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+              dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. </p>
+          </section> <!-- end project description -->
+        </div> <!-- end description -->
+      </section>
+
+      <div class="row">
+          <div class="col-4 col">col-4 col</div>
+          <div class="col-4 col">col-4 col</div>
+          <div class="col-4 col">col-4 col</div>
+        </div>
+        <div class="row">
+          <div class="col-3 col">col-3 col</div>
+          <div class="col-9 col">col-9 col</div>
+        </div>
+        <div class="row">
+          <div class="sm-6 md-8 lg-10 col">sm-6 md-8 lg-10 col</div>
+          <div class="sm-6 md-4 lg-2 col">sm-6 md-4 lg-2 col</div>
+        </div>
+        <div class="row">
+          <div class="sm-5 col">sm-5 col</div>
+          <div class="col-fill col">col-fill col</div>
+          <div class="col-fill col">col-fill col</div>
+        </div>
+        <div class="row">
+          <div class="sm-4 col">Aligned</div>
+          <div class="sm-4 col">Left (default)</div>
+        </div>
+        <div class="row flex-right">
+          <div class="sm-4 col">Aligned</div>
+          <div class="sm-4 col">Right (flex-right)</div>
+        </div>
+        <div class="row flex-center">
+          <div class="sm-4 col">Aligned</div>
+          <div class="sm-4 col">Center (flex-center)</div>
+        </div>
+        <div class="row flex-edges">
+          <div class="sm-4 col">Aligned</div>
+          <div class="sm-4 col">to edges (flex-edges)</div>
+        </div>
+        <div class="row flex-spaces">
+          <div class="sm-4 col">Aligned</div>
+          <div class="sm-4 col">to be evenly spaced (flex-spaces)</div>
+        </div>
+        <div class="row flex-top">
+          <div class="sm-6 col">Aligned top</div>
+          <div class="sm-6 col">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+          </div>
+        </div>
+        <div class="row flex-middle">
+          <div class="sm-6 col">Aligned middle</div>
+          <div class="sm-6 col">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+          </div>
+        </div>
+        <div class="row flex-bottom">
+          <div class="sm-6 col">Aligned bottom</div>
+          <div class="sm-6 col">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+          </div>
+        </div>
+        <div class="row">
+          <div class="sm-3 col align-bottom">Align bottom</div>
+          <div class="sm-3 col align-middle">Align middle</div>
+          <div class="sm-3 col align-top">Align top</div>
+          <div class="sm-3 col">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+          </div>
+        </div>
+
+      <!-- Training/ seminars -->
+      <!-- Scholistics Achievements -->
+      <!-- Technical Skills -->
+      <!-- Extra-Curricular Activities -->
+      <!-- Personal Informations -->
+      <!-- References -->
+      <!-- Declarations -->
+      <!-- signatory -->
+    </div> <!-- end main content -->
+  </div> <!-- end container -->
+</body>
+
+</html>
